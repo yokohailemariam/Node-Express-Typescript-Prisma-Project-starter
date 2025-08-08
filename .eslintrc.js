@@ -1,0 +1,10 @@
+module.exports = {
+  parser: "@typescript-eslint/parser",
+  extends: ["plugin:@typescript-eslint/recommended", "prettier"],
+  plugins: ["@typescript-eslint"],
+  root: true,
+  env: {
+    node: true,
+    jest: true,
+  },
+};

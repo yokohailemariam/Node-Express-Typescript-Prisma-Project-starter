@@ -1,0 +1,56 @@
+2025-08-07 09:15:28 [ERROR]: Error: Invalid request data
+    at new AppError (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/common/middlewares/AppError.ts:10:11)
+    at createUser (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/controller.ts:27:13)
+    at Layer.handleRequest (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/lib/layer.js:152:17)
+    at /Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/index.js:295:15
+    at processParams (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/index.js:582:12)
+    at next (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/index.js:291:5)
+2025-08-08 09:14:07 [ERROR]: Error: Invalid request data
+    at new AppError (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/common/middlewares/AppError.ts:10:11)
+    at createUser (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/controller.ts:27:13)
+    at Layer.handleRequest (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/lib/layer.js:152:17)
+    at /Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/index.js:295:15
+    at processParams (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/index.js:582:12)
+    at next (/Users/Apple/Documents/Projects/khalid/Aug-bing/node_modules/router/index.js:291:5)
+2025-08-08 10:25:24 [ERROR]: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation in
+/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/repository.ts:14:22
+
+  11 }
+  12 
+  13 export async function createUser(input: CreateUserDto): Promise<User> {
+→ 14   return prisma.user.create(
+Unique constraint failed on the fields: (`email`)
+    at ri.handleRequestError (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/generated/prisma/runtime/library.js:124:7459)
+    at ri.handleAndLogRequestError (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/generated/prisma/runtime/library.js:124:6784)
+    at ri.request (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/generated/prisma/runtime/library.js:124:6491)
+    at async l (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/generated/prisma/runtime/library.js:133:9812)
+    at async create (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/controller.ts:26:18)
+2025-08-08 10:35:49 [ERROR]: Error: User with this email already exists
+    at new AppError (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/common/middlewares/AppError.ts:10:11)
+    at Object.addUser (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/service.ts:19:11)
+    at async create (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/controller.ts:25:18)
+2025-08-08 10:45:19 [ERROR]: Error: User not found
+    at new AppError (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/common/middlewares/AppError.ts:10:11)
+    at Object.editUser (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/service.ts:27:11)
+    at async update (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/controller.ts:34:18)
+2025-08-08 10:59:35 [ERROR]: Error: User not found
+    at new AppError (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/common/middlewares/AppError.ts:10:11)
+    at Object.getUser (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/service.ts:13:11)
+    at async get (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/controller.ts:20:18)
+2025-08-08 11:00:00 [ERROR]: Error: User not found
+    at new AppError (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/common/middlewares/AppError.ts:10:11)
+    at Object.getUser (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/service.ts:13:11)
+    at async get (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/controller.ts:20:18)
+2025-08-08 11:26:01 [ERROR]: Error: User with this email already exists
+    at new AppError (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/common/middlewares/AppError.ts:10:11)
+    at Object.addUser (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/service.ts:21:11)
+    at async create (/Users/Apple/Documents/Projects/khalid/Aug-bing/src/api/v1/users/controller.ts:42:18)
